@@ -57,7 +57,7 @@ color: #000;
     right:0;
     left: 0;
     color: #fff;
-    height: 100px;
+    height: 120px;
     padding: 1.2rem;
     z-index: 100;
     background: #333;
@@ -80,7 +80,7 @@ color: #000;
     height: auto;
 }
 .navbar-fixed-top{
-    top:100px
+    top:120px
 }
 
 #call a{
@@ -89,7 +89,7 @@ color: #000;
     text-transform: capitalize;
 }
 .site-content{
-    margin-top: 100px;
+    margin-top: 180px;
 }
 .page-title{
     text-transform: capitalize;
@@ -98,15 +98,17 @@ color: #000;
 #colophon > nav{
     width: 100%;
 }
+.social-links{
+    margin: 2rem 0;
+}
 .social-link{
-    width: 3rem;
-    height: 3rem;
-    padding: 1rem;
+    padding: 1.2rem;
     text-align: center;
+
 }
 .social-link i{
     font-size:2rem;
-    color: #000;
+    color: #fff;
 }
 aside.widget{
     padding: 15px;
@@ -122,4 +124,42 @@ aside.widget{
 }
 .widget .menu-sidebar-container .menu li{
     padding: 0.8rem 0;
+}
+.facebook{
+    background-color: #3b5998;
+}
+.twitter{
+    background-color: #55acee;
+}
+.google-plus{
+    background-color: #dd4b39;
+}
+.yelp{
+    background-color: #D32323;
+}
+.site-info{
+    background-color: #333;
+    color: #ffffff;
+    font-size: 1.4rem;
+    padding: 2em;
+}
+.site-info a{
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+.call-btn{
+    border-radius: 0;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#twentyfour{
+    margin-right: 1rem;
+}
+#twentyfour img{
+    width: 45px;
+    height: auto;
+}
+article ul,
+article ol{
+    margin-left: 0;
 }

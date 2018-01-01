@@ -11,3 +11,7 @@ if ( !defined( 'MAIN_CONTENT_AREA_CLASS' ) ){
 if ( !defined( 'GLOBALS_PARTS_FOLDER' ) ){
 	define( 'GLOBALS_PARTS_FOLDER', 'template-parts/globals/content');
 }
+if( !defined('FORNT_PAGE_ID') ){
+
+	define ('FORNT_PAGE_ID', get_option('page_on_front') );
+}

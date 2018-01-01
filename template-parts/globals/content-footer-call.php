@@ -5,12 +5,12 @@
  * Date: 1/1/2018
  * Time: 09:07
  */
-$front_page_id = get_option('page_on_front');
-$phone_number = get_post_meta($post->ID, 'phone', true) ? get_post_meta($front_page_id, 'phone', true) : '(123) 456-7890';
 
+$phone_number = get_post_meta(FORNT_PAGE_ID, 'phone', true);
+$local_phone_number = get_post_meta($post->ID, 'local phone', true);
 ?>
 <div class="col-xs-12">
-    <a href="tel:<?php echo $phone_number;?>">
+    <a href="tel:<?php echo $local_phone_number ? $local_phone_number : $phone_number;?>" class="btn btn-success btn-lg btn-block call-btn">
         <span class="call-text">click to call: <?php echo $phone_number;?></span>&nbsp;<i class="fa fa-phone"></i>
     </a>
 </div>
