@@ -23,6 +23,9 @@ body{
 font-size: 1.8rem;
 line-height: 1.4;
 }
+#page{
+    overflow: hidden;
+}
 h1,h2,h3,h4,h5,h6{
     text-transform: capitalize;
 }
@@ -162,4 +165,28 @@ aside.widget{
 article ul,
 article ol{
     margin-left: 0;
+}
+.widget{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;;
+}
+#footer-call-row{
+    background: #419641;
+    padding: 3rem 0;
+}
+#footer-call-row .call-btn{
+
+    background: #419641;
+    font-size: 2rem;
+    padding: 25px 0;
+    color: #fff;
+}
+#footer-nav-row{
+    margin-top: 3rem;
+}
+footer .navbar-default{
+    background: #ddd;
+}
+footer .navbar-default .navbar-nav>li>a{
+    color: #000;
 }
