@@ -22,11 +22,11 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'compassmobile' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'compassmobile' ); ?></a>
 
-    <header id="masthead" class="site-header">
+
 		<?php get_template_part(GLOBALS_PARTS_FOLDER, 'top-nav');?>
 		<?php get_template_part(GLOBALS_PARTS_FOLDER, 'main-nav');?>
 
-    </header><!-- #masthead -->
+
 	<div id="content" class="site-content">

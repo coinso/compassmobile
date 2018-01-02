@@ -9,15 +9,19 @@
  * @package compassmobile
  */
 
+$fb = get_post_meta(FORNT_PAGE_ID, 'facebook', true);
+$twitter = get_post_meta(FORNT_PAGE_ID, 'twitter', true);
+$gmb = get_post_meta(FORNT_PAGE_ID, 'gmb', true);
+$yelp = get_post_meta(FORNT_PAGE_ID, 'yelp', true);
 ?>
 
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer container text-center">
-        <div class="row">
+        <div class="row" id="footer-call-row">
 	        <?php get_template_part(GLOBALS_PARTS_FOLDER, 'footer-call');?>
         </div>
-        <div class="row">
+        <div class="row" id="footer-nav-row">
             <div class="col-xs-12">
                 <?php get_template_part(GLOBALS_PARTS_FOLDER, 'footer-nav');?>
             </div>
@@ -25,26 +29,34 @@
         <div class="row">
             <div class="col-xs-12" id="socials">
                 <ul class="list-inline social-links">
+                    <?php if( $fb ) :?>
                     <li class="social-item">
-                        <a href="" class="social-link facebook">
+                        <a href="<?php echo $fb;?>" class="social-link facebook" rel="nofollow" target="_blank">
                             <i class="fab fa-facebook-f" aria-hidden="true"></i>
                         </a>
                     </li>
+                    <?php endif;
+                        if ( $gmb ) :?>
                     <li class="social-item">
-                        <a href="" class="social-link google-plus">
+                        <a href="<?php echo $gmb ;?>" class="social-link google-plus" rel="nofollow" target="_blank">
                             <i class="fab fa-google-plus-g" aria-hidden="true"></i>
                         </a>
                     </li>
+                    <?php endif;
+                        if ( $twitter ) :?>
                     <li class="social-item">
-                        <a href="" class="social-link twitter">
+                        <a href="<?php echo $twitter ;?>" class="social-link twitter" rel="nofollow" target="_blank">
                             <i class="fab fa-twitter" aria-hidden="true"></i>
                         </a>
                     </li>
+                    <?php endif;
+                        if ( $yelp ) :?>
                     <li class="social-item">
-                        <a href="" class="social-link yelp">
+                        <a href="<?php echo $yelp ;?>" class="social-link yelp" rel="nofollow" target="_blank">
                             <i class="fab fa-yelp" aria-hidden="true"></i>
                         </a>
                     </li>
+                    <?php endif;?>
                 </ul>
             </div>
             <div class="site-info col-xs-12">

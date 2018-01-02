@@ -6,7 +6,7 @@
  * Time: 09:06
  */
 if ( !defined( 'MAIN_CONTENT_AREA_CLASS' ) ){
-	define( 'MAIN_CONTENT_AREA_CLASS', 'col-md-8 col-sm-12');
+	define( 'MAIN_CONTENT_AREA_CLASS', 'col-sm-12');
 }
 if ( !defined( 'GLOBALS_PARTS_FOLDER' ) ){
 	define( 'GLOBALS_PARTS_FOLDER', 'template-parts/globals/content');

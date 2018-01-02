@@ -107,7 +107,7 @@ function compassmobile_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'compassmobile' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'compassmobile' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s col-md-4 col-sm-12">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s col-sm-12">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h2>',
