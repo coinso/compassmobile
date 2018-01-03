@@ -62,7 +62,7 @@ $yelp = get_post_meta(FORNT_PAGE_ID, 'yelp', true);
             <div class="site-info col-xs-12">
                 <a href="<?php echo esc_url( __( get_home_url('/'), 'compassmobile' ) ); ?>"><?php
 			        /* translators: %s: CMS name, i.e. WordPress. */
-			        printf( esc_html__( 'All Rights Reserved %s', 'compassmobile' ), 'Brand Name' );
+			        printf( esc_html__( 'All Rights Reserved %s', 'compassmobile' ), get_bloginfo('name') );
 			        ?></a>
                 <span class="sep"> | </span>
 		        <?php

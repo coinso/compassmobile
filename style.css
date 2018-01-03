@@ -60,7 +60,7 @@ color: #000;
     right:0;
     left: 0;
     color: #fff;
-    height: 120px;
+    height: 75px;
     padding: 1.2rem;
     z-index: 100;
     background: #333;
@@ -70,10 +70,13 @@ color: #000;
 }
 #logo-wrap{
     text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    width: 60%;
 }
 #logo-wrap .logo{
-    width: 120px;
-    height: 45px;
+    width: auto;
+    height: 50px;
 }
 .navmenu-brand{
     text-align: center;
@@ -83,7 +86,7 @@ color: #000;
     height: auto;
 }
 .navbar-fixed-top{
-    top:120px
+    top:75px
 }
 
 #call a{
@@ -92,7 +95,7 @@ color: #000;
     text-transform: capitalize;
 }
 .site-content{
-    margin-top: 180px;
+    margin-top: 90px;
 }
 .page-title{
     text-transform: capitalize;

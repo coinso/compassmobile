@@ -44,9 +44,9 @@ if ( ! function_exists( 'compassmobile_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary'       => esc_html__( 'Primary', 'compassmobile' ),
-			'footer'        => esc_html__( 'footer', 'compassmobile' ),
-			'secondary'     => esc_html__( 'Secondary', 'compassmobile' ),
+			'primary'               => esc_html__( 'Mobile Primary', 'compassmobile' ),
+			'footersitemap'         => esc_html__( 'Mobile footer', 'compassmobile' ),
+			'secondary'             => esc_html__( 'Mobile Secondary', 'compassmobile' ),
 		) );
 
 		/*
@@ -119,18 +119,18 @@ add_action( 'widgets_init', 'compassmobile_widgets_init' );
  * Enqueue scripts and styles.
  */
 function compassmobile_scripts() {
-    wp_enqueue_style('compassmobile-base', get_stylesheet_directory_uri() . '/assets/css/base.min.css', [], microtime(), 'all');
-    wp_enqueue_style('compassmobile-fa5', get_stylesheet_directory_uri() . '/assets/lib/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css', [], microtime(), 'all');
-    wp_enqueue_style('compassmobile-bootstrap', get_stylesheet_directory_uri() . '/assets/lib/bootstrap/css/bootstrap.min.css', [], microtime(), 'all');
-    wp_enqueue_style('compassmobile-bootstrap-theme', get_stylesheet_directory_uri() . '/assets/lib/bootstrap/css/bootstrap-theme.min.css', [], microtime(), 'all');
-    wp_enqueue_style('compassmobile-jasny-bootstrap', get_stylesheet_directory_uri() . '/assets/lib/jasny-bootstrap/css/jasny-bootstrap.min.css', [], microtime(), 'all');
+    wp_enqueue_style('compassmobile-base', get_stylesheet_directory_uri() . '/assets/css/base.min.css', array(), microtime(), 'all');
+    wp_enqueue_style('compassmobile-fa5', get_stylesheet_directory_uri() . '/assets/lib/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css', array(), microtime(), 'all');
+    wp_enqueue_style('compassmobile-bootstrap', get_stylesheet_directory_uri() . '/assets/lib/bootstrap/css/bootstrap.min.css', array(), microtime(), 'all');
+    wp_enqueue_style('compassmobile-bootstrap-theme', get_stylesheet_directory_uri() . '/assets/lib/bootstrap/css/bootstrap-theme.min.css', array(), microtime(), 'all');
+    wp_enqueue_style('compassmobile-jasny-bootstrap', get_stylesheet_directory_uri() . '/assets/lib/jasny-bootstrap/css/jasny-bootstrap.min.css', array(), microtime(), 'all');
 	wp_enqueue_style( 'compassmobile-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'compassmobile-bootstrap', get_template_directory_uri() . '/assets/lib/bootstrap/js/bootstrap.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'compassmobile-jasny-bootstrap', get_template_directory_uri() . '/assets/lib/jasny-bootstrap/js/jasny-bootstrap.min.js', array('jquery'), '20151215', true );
-	wp_enqueue_script( 'compassmobile-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'compassmobile-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'compassmobile-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'compassmobile-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

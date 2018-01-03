@@ -12,7 +12,7 @@ $h1 = get_post_meta($post->ID, 'h1', true) ? get_post_meta($post->ID, 'h1', true
 <article id="post-<?php the_ID(); ?>" <?php post_class(MAIN_CONTENT_AREA_CLASS); ?>>
     <?php if ( has_post_thumbnail() ) :?>
     <div class="img-wrap">
-        <?php the_post_thumbnail( 'full',['class' => 'img-responsive page-img']);?>
+        <?php the_post_thumbnail( 'full',array('class' => 'img-responsive page-img'));?>
     </div>
     <?php endif; ?>
     <h1 class="page-title entry-title">

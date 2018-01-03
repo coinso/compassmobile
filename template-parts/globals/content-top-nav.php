@@ -11,11 +11,7 @@ $local_phone_number = get_post_meta($post->ID, 'local phone', true);
 $cta_top = get_post_meta(FORNT_PAGE_ID, 'cta top', true);
 ?>
 <div class="container-fluid" id="top-bar">
-    <div class="row">
-        <div class="col-xs-12" id="logo-wrap">
-	        <?php echo compassmobile_custom_logo();?>
-        </div>
-    </div>
+
 	<div class="row">
         <div class="col-xs-12 text-left" id="call">
             <a href="tel:<?php echo $local_phone_number ? $local_phone_number : $phone_number;?>" class="btn btn-success btn-lg btn-block call-btn">
