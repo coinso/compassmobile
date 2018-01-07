@@ -71,7 +71,9 @@ $yelp = get_post_meta(FORNT_PAGE_ID, 'yelp', true);
 		        ?>
             </div><!-- .site-info -->
         </div>
-	</footer><!-- #colophon -->
+        <a href="#top" class="scrollup" role="button" title="<?php echo 'back to top';?>" aria-label="<?php echo 'back to top';?>" style="display: block;"><i class="fa fa-chevron-up"></i></a>
+
+    </footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

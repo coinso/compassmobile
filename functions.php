@@ -128,6 +128,7 @@ function compassmobile_scripts() {
 
 	wp_enqueue_script( 'compassmobile-bootstrap', get_template_directory_uri() . '/assets/lib/bootstrap/js/bootstrap.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'compassmobile-jasny-bootstrap', get_template_directory_uri() . '/assets/lib/jasny-bootstrap/js/jasny-bootstrap.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'compassmobile-main-script', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'compassmobile-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'compassmobile-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.min.js', array(), '20151215', true );

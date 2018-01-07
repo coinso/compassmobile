@@ -25,8 +25,7 @@ get_header(); ?>
 				// If comments are open or we have at least one comment, load up the comment template.
 
 			endwhile; // End of the loop.
-			?>
-            <?php
+
                 if ( is_active_sidebar('sidebar-1') ){
                     dynamic_sidebar( 'sidebar-1' );
                 }

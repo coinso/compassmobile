@@ -6,18 +6,11 @@
  *
  * @package compassmobile
  */
-$h1 = get_post_meta($post->ID, 'h1', true) ? get_post_meta($post->ID, 'h1', true) : get_the_title();
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(MAIN_CONTENT_AREA_CLASS); ?>>
-    <?php if ( has_post_thumbnail() ) :?>
-    <div class="img-wrap">
-        <?php the_post_thumbnail( 'full',array('class' => 'img-responsive page-img'));?>
-    </div>
-    <?php endif; ?>
-    <h1 class="page-title entry-title">
-       <?php echo $h1;?>
-    </h1>
+    <?php get_template_part(GLOBALS_PARTS_FOLDER, 'top-page');?>
 	<div class="entry-content">
 		<?php
 			the_content();

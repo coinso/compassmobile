@@ -63,7 +63,7 @@ color: #000;
     height: 75px;
     padding: 1.2rem;
     z-index: 100;
-    background: #333;
+    background: #807c7c;
 }
 #top-bar .row{
     height: 50px;
@@ -78,6 +78,9 @@ color: #000;
     width: auto;
     height: 50px;
 }
+.navbar-inverse .navbar-toggle {
+    border: none;
+}
 .navmenu-brand{
     text-align: center;
 }
@@ -88,14 +91,24 @@ color: #000;
 .navbar-fixed-top{
     top:75px
 }
+.navmenu-inverse{
+    background-color: #807c7c;
+}
 
+.navbar-inverse{
+    background: #807c7c;
+}
+.navmenu-inverse .navmenu-nav>li>a,
+.navbar-inverse .navbar-offcanvas .navmenu-nav>li>a{
+    color: #000;
+}
 #call a{
     color: #fff;
     font-weight:500;
     text-transform: capitalize;
 }
 .site-content{
-    margin-top: 90px;
+    margin-top: 130px;
 }
 .page-title{
     text-transform: capitalize;
@@ -193,3 +206,64 @@ footer .navbar-default{
 footer .navbar-default .navbar-nav>li>a{
     color: #000;
 }
+.top-img-wrap{
+    width: 100%;
+    height: 40vh;
+    padding: 2rem;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+}
+.top-img-wrap .overlay{
+
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.top-img-wrap .lead{
+    font-weight: bold;
+    font-size:3rem;
+    z-index: 1;
+    color: #fff;
+}
+.top-img-wrap > .main_cta > .fa{
+    display: block;
+}
+.top-img-wrap .cta-call-btn a{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 45px;
+    padding: 5px;
+    font-size: 2.5rem;
+    color: #fff;
+}
+h1{
+    font-weight: bold;
+}
+h1.blog-title{
+    text-align: center;
+}
+.scrollup {
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    left: 15px;
+    background: #419641;
+    z-index: 2;
+    padding: 0;
+    width: 25px;
+    height: 25px; }
+
+.scrollup .fa {
+    color: #fff; }
+
+.scrollup:hover {
+    text-decoration: none; }

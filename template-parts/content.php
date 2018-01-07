@@ -6,27 +6,24 @@
  *
  * @package compassmobile
  */
-
+$h1 = get_post_meta($post->ID, 'h1', true) ? get_post_meta($post->ID, 'h1', true) : get_the_title();
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( MAIN_CONTENT_AREA_CLASS); ?>>
-	<header class="entry-header">
+	<?php  ?>
+    <header class="entry-header">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			get_template_part(GLOBALS_PARTS_FOLDER, 'top-page');
 		else :
 			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+			compassmobile_post_thumbnail();
 		endif;
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php compassmobile_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
+		?>
 	</header><!-- .entry-header -->
 
-	<?php compassmobile_post_thumbnail(); ?>
+
 
 	<div class="entry-content">
 		<?php
@@ -55,7 +52,5 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php compassmobile_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+
 </article><!-- #post-<?php the_ID(); ?> -->
