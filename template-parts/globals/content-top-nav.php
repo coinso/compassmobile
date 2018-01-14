@@ -9,13 +9,14 @@
 $phone_number = get_post_meta(FORNT_PAGE_ID, 'phone', true);
 $local_phone_number = get_post_meta($post->ID, 'local phone', true);
 $cta_top = get_post_meta(FORNT_PAGE_ID, 'cta top', true);
+$phone_img = get_stylesheet_directory_uri() . '/assets/img/phone-call.png';
 ?>
 <div class="container-fluid" id="top-bar">
 
 	<div class="row">
         <div class="col-xs-12 text-left" id="call">
             <a href="tel:<?php echo $local_phone_number ? $local_phone_number : $phone_number;?>" class="btn btn-success btn-lg btn-block call-btn">
-                <span class="call-text"><?php echo $cta_top .' '. $phone_number;?></span>&nbsp;<i class="fa fa-phone"></i>
+                <img src="<?php echo $phone_img;?>" alt="Call 24/7">&nbsp;<span class="call-text"><?php echo $phone_number;?></span>
             </a>
 
         </div>

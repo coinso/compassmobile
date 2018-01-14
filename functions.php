@@ -171,12 +171,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 require get_template_directory() . '/inc/const.php';
 
-/**
- * @return string|void
- *  Require Customizer settings file
- */
-require get_template_directory() . '/inc/mobile_customizer.php';
-
 
 function compassmobile_custom_logo(){
 	$logo = get_bloginfo('name');

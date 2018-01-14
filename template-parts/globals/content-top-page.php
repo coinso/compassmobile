@@ -7,10 +7,12 @@ if ( has_post_thumbnail() ) {
 	$bg = get_the_post_thumbnail_url();?>
 	<div class="top-img-wrap" style="background: url('<?php echo $bg;?>') no-repeat center center; background-size: cover">
 		<div class="overlay"></div>
-		<div class="main_cta lead">
-			<?php echo $main_cta;?>
-			<i class="fa fa-angle-down"></i>
-		</div>
+        <?php if( $main_cta ) :?>
+            <div class="main_cta lead">
+                <?php echo $main_cta;?>
+                <i class="fa fa-angle-down"></i>
+            </div>
+        <?php endif;?>
 		<div class="cta-call-btn">
 			<a href="tel:<?php echo $local_phone_number ? $local_phone_number : $phone_number;?>" class="btn btn-danger btn-block"><?php echo $local_phone_number ? $local_phone_number : $phone_number;?></a>
 		</div>
@@ -22,10 +24,12 @@ if ( has_post_thumbnail() ) {
 	$bg = get_stylesheet_directory_uri() . '/assets/img/default-bg.jpg'?>
 	<div class="top-img-wrap top-img-wrap-default" style="background: url('<?php echo $bg;?>') no-repeat center center; background-size: cover">
 		<div class="overlay"></div>
-		<div class="main_cta lead">
-			<?php echo $main_cta;?>
-			<i class="fa fa-angle-down"></i>
-		</div>
+        <?php if( $main_cta ) :?>
+            <div class="main_cta lead">
+                <?php echo $main_cta;?>
+                <i class="fa fa-angle-down"></i>
+            </div>
+        <?php endif;?>
 		<div class="cta-call-btn">
 			<a href="tel:<?php echo $local_phone_number ? $local_phone_number : $phone_number;?>" class="btn btn-danger btn-block"><?php echo $local_phone_number ? $local_phone_number : $phone_number;?></a>
 		</div>

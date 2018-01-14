@@ -72,11 +72,11 @@ color: #000;
     text-align: center;
     display: inline-block;
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
 }
 #logo-wrap .logo{
-    width: auto;
-    height: 50px;
+    width: 75px;
+    height: auto;
 }
 .navbar-inverse .navbar-toggle {
     border: none;
@@ -106,9 +106,24 @@ color: #000;
     color: #fff;
     font-weight:500;
     text-transform: capitalize;
+    font-size: 2.5rem;
+    border-radius: 15px;
+    border:1px solid #000;
+    background: rgba(123,224,61,1);
+    background: -moz-linear-gradient(top, rgba(123,224,61,1) 0%, rgba(102,189,51,1) 10%, rgba(65,150,65,1) 48%, rgba(102,189,51,1) 90%, rgba(123,224,61,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(123,224,61,1)), color-stop(10%, rgba(102,189,51,1)), color-stop(48%, rgba(65,150,65,1)), color-stop(90%, rgba(102,189,51,1)), color-stop(100%, rgba(123,224,61,1)));
+    background: -webkit-linear-gradient(top, rgba(123,224,61,1) 0%, rgba(102,189,51,1) 10%, rgba(65,150,65,1) 48%, rgba(102,189,51,1) 90%, rgba(123,224,61,1) 100%);
+    background: -o-linear-gradient(top, rgba(123,224,61,1) 0%, rgba(102,189,51,1) 10%, rgba(65,150,65,1) 48%, rgba(102,189,51,1) 90%, rgba(123,224,61,1) 100%);
+    background: -ms-linear-gradient(top, rgba(123,224,61,1) 0%, rgba(102,189,51,1) 10%, rgba(65,150,65,1) 48%, rgba(102,189,51,1) 90%, rgba(123,224,61,1) 100%);
+    background: linear-gradient(to bottom, rgba(123,224,61,1) 0%, rgba(102,189,51,1) 10%, rgba(65,150,65,1) 48%, rgba(102,189,51,1) 90%, rgba(123,224,61,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7be03d', endColorstr='#7be03d', GradientType=0 );
+}
+#call img{
+    width: 35px;
+    height: auto;
 }
 .site-content{
-    margin-top: 130px;
+    margin-top: 160px;
 }
 .page-title{
     text-transform: capitalize;
@@ -196,6 +211,10 @@ article ol{
     font-size: 2rem;
     padding: 25px 0;
     color: #fff;
+}
+#footer-call-row .call-btn img{
+    height: 35px;
+    width: auto;
 }
 #footer-nav-row{
     margin-top: 3rem;
