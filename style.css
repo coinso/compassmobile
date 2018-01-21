@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Ido @ coinso.com
 Author URI: http://coinso.com
 Description: compass mobile theme
-Version: 1.0.0
+Version: 1.5
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: compassmobile
@@ -75,7 +75,7 @@ color: #000;
     width: 70%;
 }
 #logo-wrap .logo{
-    width: 75px;
+    width: 90px;
     height: auto;
 }
 .navbar-inverse .navbar-toggle {
@@ -219,11 +219,23 @@ article ol{
 #footer-nav-row{
     margin-top: 3rem;
 }
+#footer-nav-row .col-xs-12{
+    padding: 0;
+}
 footer .navbar-default{
     background: #ddd;
 }
 footer .navbar-default .navbar-nav>li>a{
     color: #000;
+}
+footer .navbar-nav li.current-menu-item {
+    background: #000;
+
+}
+footer .navbar-nav li.active.current-menu-item a{
+    box-shadow: none;
+    color: #ffffff;
+    background: #000;
 }
 .top-img-wrap{
     width: 100%;
