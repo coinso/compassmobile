@@ -19,7 +19,7 @@ $h1 = get_post_meta($post->ID, 'h1', true) ? get_post_meta($post->ID, 'h1', true
 			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
 			compassmobile_post_thumbnail();
 		endif;
-
+            
 		?>
 	</header><!-- .entry-header -->
 
