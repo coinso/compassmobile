@@ -21,7 +21,11 @@ if ( has_post_thumbnail() ) {
 		<?php echo $h1;?>
 	</h1>
 <?php }else{
+<<<<<<< HEAD
 
+=======
+//	$bg = get_stylesheet_directory_uri() . '/assets/img/default-bg.jpg';
+>>>>>>> refs/remotes/origin/production
 	$bg = get_the_post_thumbnail_url(FORNT_PAGE_ID);?>
 	<div class="top-img-wrap top-img-wrap-default" style="background: url('<?php echo $bg;?>') no-repeat center center; background-size: cover">
 		<div class="overlay"></div>
