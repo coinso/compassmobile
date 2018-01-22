@@ -70,6 +70,13 @@ $yelp = get_post_meta(FORNT_PAGE_ID, 'yelp', true);
 		        printf( esc_html__( '%1$s  %2$s', 'compassmobile' ), '&copy <span class="sep"> | </span>', get_the_date('Y') );
 		        ?>
             </div><!-- .site-info -->
+            <div id="footer-disclaimer" class="col-xs-12">
+
+                    <div class="fyi">* Although we always strive to fulfill the 30 min. arrival promise, our eventual arrival time heavily depends on area traffic!</div>
+                    <div class="fyi">* We perform our services through a network of independently owned and licensed affiliates</div>
+
+
+            </div>
         </div>
         <a href="#top" class="scrollup" role="button" title="<?php echo 'back to top';?>" aria-label="<?php echo 'back to top';?>" style="display: block;"><i class="fa fa-chevron-up"></i></a>
 
