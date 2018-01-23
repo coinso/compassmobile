@@ -171,7 +171,8 @@ aside.widget{
 .yelp{
     background-color: #D32323;
 }
-.site-info{
+.site-info,
+#footer-disclaimer{
     background-color: #333;
     color: #ffffff;
     font-size: 1.4rem;
@@ -181,16 +182,9 @@ aside.widget{
     color: #ffffff;
     font-size: 1.4rem;
 }
-#footer-disclaimer{
-    background-color: #333;
-    padding: 20px;
-}
 #footer-disclaimer .fyi{
-    color: #fff;
-    font-size: 1.4rem;
     text-align: left;
-    padding: 5px;
-    line-height: 1.5;
+    font-size: 1.2rem;
 }
 .call-btn{
     border-radius: 0;
@@ -297,7 +291,7 @@ h1.blog-title{
     display: block;
     position: fixed;
     bottom: 50px;
-    left: 15px;
+    right: 15px;
     background: #419641;
     z-index: 2;
     padding: 0;
@@ -309,3 +303,10 @@ h1.blog-title{
 
 .scrollup:hover {
     text-decoration: none; }
+
+.top-bar-logo-wrap a{
+    height: 50px;
+    width: 150px;
+    display: inline-block;
+    box-sizing: border-box;
+}
