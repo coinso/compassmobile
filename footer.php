@@ -13,6 +13,9 @@ $fb = get_post_meta(FORNT_PAGE_ID, 'facebook', true);
 $twitter = get_post_meta(FORNT_PAGE_ID, 'twitter', true);
 $gmb = get_post_meta(FORNT_PAGE_ID, 'gmb', true);
 $yelp = get_post_meta(FORNT_PAGE_ID, 'yelp', true);
+$disclaimer_w = get_stylesheet_directory_uri() . '/assets/img/disclaimer-white.png';
+$disclaimer_b = get_stylesheet_directory_uri() . '/assets/img/disclaimer-black.png';
+$disclaimer = get_post_meta(FORNT_PAGE_ID, 'disclaimer', true);
 ?>
 
 	</div><!-- #content -->
@@ -71,11 +74,11 @@ $yelp = get_post_meta(FORNT_PAGE_ID, 'yelp', true);
 		        ?>
             </div><!-- .site-info -->
             <div id="footer-disclaimer" class="col-xs-12">
-
-                    <div class="fyi">* Although we always strive to fulfill the 30 min. arrival promise, our eventual arrival time heavily depends on area traffic!</div>
-                    <div class="fyi">* We perform our services through a network of independently owned and licensed affiliates</div>
-
-
+                <?php if( $disclaimer == 'black'){ ?>
+                    <img src="<?php echo $disclaimer_b ;?>" alt="disclaimer">
+                <?php } else { ?>
+                    <img src="<?php echo $disclaimer_w ;?>" alt="disclaimer">
+                <?php } ?>
             </div>
         </div>
         <a href="#top" class="scrollup" role="button" title="<?php echo 'back to top';?>" aria-label="<?php echo 'back to top';?>" style="display: block;"><i class="fa fa-chevron-up"></i></a>
