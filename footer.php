@@ -70,7 +70,7 @@ $disclaimer = get_post_meta(FORNT_PAGE_ID, 'disclaimer', true);
                 <span class="sep"> | </span>
 		        <?php
 		        /* translators: 1: Theme name, 2: Theme author. */
-		        printf( esc_html__( '%1$s  %2$s', 'compassmobile' ), '&copy <span class="sep"> | </span>', get_the_date('Y') );
+		        printf( esc_html__( '%1$s  %2$s', 'compassmobile' ), '&copy <span class="sep"> | </span>', date('Y') );
 		        ?>
             </div><!-- .site-info -->
             <div id="footer-disclaimer" class="col-xs-12">
