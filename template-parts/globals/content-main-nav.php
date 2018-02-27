@@ -24,7 +24,7 @@ $logo_url = get_post_meta(FORNT_PAGE_ID, 'logo url',true) ? get_post_meta(FORNT_
 		<span class="icon-bar"></span>
 	</button>
     <span id="logo-wrap" class="top-bar-logo-wrap">
-        <a href="<?php echo esc_url( home_url('/') );?>" style="background: url('<?php echo $logo_url;?>') no-repeat center; background-size: cover;">
+        <a href="<?php echo esc_url( home_url('/') );?>" style="background: url('<?php echo $logo_url;?>') no-repeat center; background-size: contain;">
         </a>
     </span>
     <span class="pull-right" id="twentyfour">
