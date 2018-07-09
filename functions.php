@@ -186,3 +186,5 @@ function compassmobile_custom_logo(){
 
 	return $logo;
 }
+
+add_filter( 'acf/settings/remove_wp_meta_box', '__return_false' );

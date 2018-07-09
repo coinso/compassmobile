@@ -17,7 +17,7 @@ if ( has_post_thumbnail() ) {
 			<a href="tel:<?php echo $local_phone_number ? $local_phone_number : $phone_number;?>" class="btn btn-danger btn-block"><?php echo $local_phone_number ? $local_phone_number : $phone_number;?></a>
 		</div>
 	</div>
-	<h1 class="page-title entry-title">
+	<h1 class="page-title entry-title" <?php if ( is_singular('job') )echo 'itemprop="title"' ;?>>
 		<?php echo $h1;?>
 	</h1>
 <?php }else{
@@ -35,7 +35,7 @@ if ( has_post_thumbnail() ) {
 			<a href="tel:<?php echo $local_phone_number ? $local_phone_number : $phone_number;?>" class="btn btn-danger btn-block"><?php echo $local_phone_number ? $local_phone_number : $phone_number;?></a>
 		</div>
 	</div>
-	<h1 class="page-title entry-title">
+	<h1 class="page-title entry-title" <?php if ( is_singular('job') )echo 'itemprop="title"' ;?>>
 		<?php echo $h1;?>
 	</h1>
 <?php } ?>
