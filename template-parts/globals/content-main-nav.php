@@ -9,11 +9,19 @@ $logo_url = get_post_meta(FORNT_PAGE_ID, 'logo url',true) ? get_post_meta(FORNT_
     </a>
 
 		<?php
-		wp_nav_menu( array(
-			'theme_location'    => 'primary',
-			'menu_id'           => 'primary-menu',
-            'menu_class'        =>  'nav navmenu-nav'
-		) );
+		if ( has_nav_menu('mobile')){
+            wp_nav_menu( array(
+                'theme_location'    => 'mobile',
+                'menu_id'           => 'primary-menu',
+                'menu_class'        =>  'nav navmenu-nav'
+            ) );
+        } else {
+            wp_nav_menu( array(
+                'theme_location'    => 'primary',
+                'menu_id'           => 'primary-menu',
+                'menu_class'        =>  'nav navmenu-nav'
+            ) );
+        }
 		?>
 
 </nav>
