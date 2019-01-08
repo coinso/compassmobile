@@ -3,6 +3,9 @@ $h1         = get_post_meta($post->ID, 'h1', true) ? get_post_meta($post->ID, 'h
 $main_cta   = get_post_meta(FORNT_PAGE_ID, 'main cta', true) ? get_post_meta(FORNT_PAGE_ID, 'main cta', true) : get_post_meta($post->ID, 'main cta', true);
 $phone_number = get_post_meta(FORNT_PAGE_ID, 'phone', true);
 $local_phone_number = get_post_meta($post->ID, 'local phone', true);
+if ( $local_phone_number ){
+    $phone_number = $local_phone_number;
+}
 if ( has_post_thumbnail() ) {
 	$bg = get_the_post_thumbnail_url();?>
 	<div class="top-img-wrap" style="background: url('<?php echo $bg;?>') no-repeat center center; background-size: cover">

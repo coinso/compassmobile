@@ -10,6 +10,9 @@ $phone_number = get_post_meta(FORNT_PAGE_ID, 'phone', true);
 $local_phone_number = get_post_meta($post->ID, 'local phone', true);
 $cta_top = get_post_meta(FORNT_PAGE_ID, 'cta top', true);
 $phone_img = get_stylesheet_directory_uri() . '/assets/img/phone-call.png';
+if ( $local_phone_number ){
+    $phone_number = $local_phone_number;
+}
 ?>
 <div class="container-fluid" id="top-bar">
 
